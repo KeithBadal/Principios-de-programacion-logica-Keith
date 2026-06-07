@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>index</title>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 flex items-center justify-center p-4 relative overflow-hidden">
+    <span class="absolute text-6xl sm:text-7xl md:text-8xl opacity-30 top-5 left-5 sm:left-10 select-none">🐼</span>
+    <span class="absolute text-5xl sm:text-6xl md:text-7xl opacity-25 bottom-10 right-5 sm:right-10 select-none">🐼</span>
+    <span class="absolute text-4xl sm:text-5xl opacity-20 top-1/2 -translate-y-1/2 left-2 sm:left-5 select-none hidden sm:block">🐼</span>
+    <span class="absolute text-4xl sm:text-5xl opacity-20 bottom-20 left-1/3 select-none hidden sm:block">🐼</span>
+    <span class="absolute text-3xl sm:text-4xl opacity-20 top-20 right-10 select-none hidden sm:block">🐼</span>
+    <div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 w-full max-w-md relative z-10">
+        <h1 class="text-3xl font-bold text-center text-purple-600 mb-2">✨ Calculadora ✨</h1>
+        <p class="text-center text-purple-400 text-sm mb-6">SUMA, RESTA, MULTIPLICA O DIVIDE!</p>
+
+        <form action="#">
+            <div class="mb-4">
+                <label for="numero_1" class="block text-sm font-medium text-pink-500 mb-1">🌸 Número 1:</label>
+                <input type="number" id="numero_1" name="numero_1"
+                    class="w-full px-4 py-3 rounded-xl border-2 border-pink-200 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all duration-300 bg-pink-50 text-gray-700">
+            </div>
+
+            <div class="mb-4">
+                <label for="numero_2" class="block text-sm font-medium text-pink-500 mb-1">🌸 Número 2:</label>
+                <input type="number" id="numero_2" name="numero_2"
+                    class="w-full px-4 py-3 rounded-xl border-2 border-pink-200 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all duration-300 bg-pink-50 text-gray-700">
+            </div>
+
+            <p id="resultado" class="text-center text-lg font-bold text-purple-600 bg-purple-50 rounded-xl p-3 mb-4 min-h-[48px]"></p>
+
+            <div class="grid grid-cols-2 gap-3">
+                <button type="button" id="btnSuma"
+                    class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 cursor-pointer">➕ Sumar</button>
+                <button type="button" id="btnResta"
+                    class="bg-purple-400 hover:bg-purple-500 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 cursor-pointer">➖ Restar</button>
+                <button type="button" id="btnMultiplicacion"
+                    class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 cursor-pointer">✖️ Multiplicar</button>
+                <button type="button" id="btnDivision"
+                    class="bg-green-400 hover:bg-green-500 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 cursor-pointer">➗ Dividir</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="funciones.js"></script>
+    <script src="operaciones.js"></script>
+</body>
+</html>
