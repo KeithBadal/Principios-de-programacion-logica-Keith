@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>PRODUCTOS</title>
+</head>
+
+<body>
+   
+    <div class="overflow-x-auto container mx-auto px-4 my-9">
+    <h1 class="text-3xl font-bold mb-6" >Lista de Productos</h1>
+    <select name = "filtro" id="filtro" 
+    class="select select-bordered w-full max-w-xs mb-4">
+        <button id = "btnFiltrar">Filtrar por categoria</button>
+        <option value="Todas">Todas las categorias</option>
+        <option value="Electrónicos">Electrónicos</option>
+        <option value="Muebles">Muebles</option>
+        <option value="Accesorios">Accesorios</option>
+        <option value="Iluminación">Iluminación</option>
+        <option value="Componentes">Componentes</option>
+        <option value="Almacenamiento">Almacenamiento</option>
+        <option value="Redes">Redes</option>
+        <option value="Ropa">Ropa</option>
+        <option value="Videojuegos">Videojuegos</option>
+        <option value="Herramientas">Herramientas</option>
+        <option value="Hogar">Hogar</option>
+        <option value="Oficina">Oficina</option>
+        <option value="Salud">Salud</option>
+        <option value="Software">Software</option>
+    </select>
+    <table class="table table-zebra">
+        </div>
+        <thead> 
+            <tr> 
+              <th>ID</th> 
+              <th>Nombre</th> 
+              <th>Precio</th> 
+              <th>Categoría</th> 
+              <th>Stock</th>  
+              <th>Total de Stock</th>
+            </tr>
+            </thead>
+        <tbody id="products"></tbody>
+    </table>
+    <script src="productos.js"></script>
+    <script src="productos_acciones.js"></script>
+</body>
+</html>
+
